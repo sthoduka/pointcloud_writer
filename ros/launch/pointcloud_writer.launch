@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="pointcloud_writer" type="pointcloud_writer" name="pointcloud_writer" output="screen" respawn="false">
+        <param name="input_topic" value="$(arg input_topic)" />
+        <param name="output_file" value="$(arg output_file)" />
+    </node>
+</launch>
